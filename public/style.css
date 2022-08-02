@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+.con {  
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 1.9fr;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "nav"
+    "main";
+}
+
+.main { 
+  display: flex;
+  align-items: center;
+  padding-top: 250px;
+  flex-direction: column;
+  grid-area: main; 
+  background: linear-gradient(135deg, hsla(78, 56%, 85%, 0.3), hsla(359, 84%, 63%, 0.2)),
+  url('https://images.pexels.com/photos/7991489/pexels-photo-7991489.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center / cover;
+}
+
+.title {
+  color: white;
+  width: 900px;
+  font-size: 55px;
+}
+
+.button{
+  background-color: orange;
+  margin-top:10px;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.title2{
+  margin:40px 0;
+  font-size: 55px;
+}
+
+.card {
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+
+.movies{
+  margin: 0px 20vh;
+}
+
+.overview{
+  width: 500px;
+}
