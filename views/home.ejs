@@ -11,28 +11,33 @@
 </head>
 <body>
 
-  <div class="con">
-
+  <div class="cont">
     
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">The Movie Project</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#">Home <span class="sr-only"></span></a>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">The Movie Database</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
         </div>
       </div>
     </nav>
   
 
     <div class="main">
-      <h1 class="title">IN THE MOOD TO CATCH A FLICK? SEE WHAT MOVIES ARE PLAYING NOW!</h1>
-      <div class="box">
-        <form action="/nowplaying" method="GET">
-          <button class='button'>Show me a list of movies</button>
-        </form>
+      <div class="main-title">
+        <h1 class="title">IN THE MOOD TO CATCH A FLICK? SEE WHAT MOVIES ARE PLAYING NOW!</h1>
+        <a href="/nowplaying"><button id="show-trending">Show List</button></a>
       </div>
     </div>
 
